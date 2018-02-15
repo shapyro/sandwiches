@@ -5,3 +5,13 @@ body {
   background-position: center; 
 }
 
+.uneaten {
+  margin: 10px;
+}
+
+.eaten {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+

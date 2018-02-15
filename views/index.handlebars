@@ -4,29 +4,31 @@
 <form class="create-form">
 
   <div class="form-group">
-    <label for="burg">Burger Fillins:</label>
+    <label for="burg">Burger Desired:</label>
     <input type="text" id="burg" name="name">
+    <button type="submit">Add Burger</button>
   </div>
 
-  <button type="submit">Add Burger</button>
+  
 </form>
 
 <div class="showBurgers">
 
-<ol>
-  {{#each burgers}}
-    {{#unless eaten}}
-      {{> burgers/burger-block eaten=true}}
-    {{/unless}}
-  {{/each}}
-</ol>
+  <div class="uneaten">
+    {{#each burgers}}
+      {{#unless devoured}}
+        {{> burgers/burger-block eaten=true}}
+      {{/unless}}
+    {{/each}}
+  </div>
 
-<ol>
+</div>
+
+<div class="eaten">
+  <h2>DEVOURED</h2>
   {{#each burgers}}
-    {{#if eaten}}
+    {{#if devoured}}
       {{> burgers/burger-block eaten=false}}
     {{/if}}
   {{/each}}
-</ol>
-
 </div>
