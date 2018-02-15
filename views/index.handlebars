@@ -13,20 +13,20 @@
 
 <div class="showBurgers">
 
-<ul>
+<ol>
   {{#each burgers}}
     {{#unless eaten}}
       {{> burgers/burger-block eaten=true}}
     {{/unless}}
   {{/each}}
-</ul>
+</ol>
 
-<ul>
+<ol>
   {{#each burgers}}
     {{#if eaten}}
       {{> burgers/burger-block eaten=false}}
     {{/if}}
   {{/each}}
-</ul>
+</ol>
 
 </div>
