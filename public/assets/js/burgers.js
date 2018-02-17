@@ -29,7 +29,6 @@ $(function() {
 
     var newBurger = {
       burger_name: $("#burg").val().trim(),
-      // devoured: $("[name=devoured]:checked").val().trim()
     };
 
     // Send the POST request.
@@ -59,10 +58,5 @@ $(function() {
       }
     );
   });
-
-  // wanted to try and remove the button once status changed to devoured
-  if($('.change-eat').attr('data-neweat', false)) {
-    
-  }
   
 });
