@@ -59,4 +59,10 @@ $(function() {
       }
     );
   });
+
+  // wanted to try and remove the button once status changed to devoured
+  if($('.change-eat').attr('data-neweat', false)) {
+    
+  }
+  
 });

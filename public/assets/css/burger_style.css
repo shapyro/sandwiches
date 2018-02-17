@@ -3,6 +3,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
+  /* font-family: 'Abril Fatface'; */
+  font-family: 'Permanent Marker', cursive;
 }
 
 .uneaten {
@@ -14,4 +16,9 @@ body {
   top: 0;
   right: 0;
 }
+
+/* #devouredTitle {
+  text-align: center;
+  font-size: 40px;
+} */
 

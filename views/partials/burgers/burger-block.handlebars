@@ -1,9 +1,11 @@
 <div>
 	{{id}} - {{burger_name}}
 
+{{#if eaten}}
 	<button class="change-eat" data-id="{{id}}" data-newEat="{{eaten}}">
-		{{#if eaten}}EAT ME{{/if}}
+		EAT ME
 	</button>
+{{/if}}
 
 	{{!-- <button class="delete-burger" data-id="{{this.id}}">DELETE!</button> --}}
 </div>

@@ -1,10 +1,9 @@
-<h1>Burgers!</h1>
+<h1>Chomp Burgers!</h1>
 
-<h2>Add a Burger</h2>
+<h2>Make a Burger</h2>
 <form class="create-form">
-
   <div class="form-group">
-    <label for="burg">Burger Desired:</label>
+    {{!-- <label for="burg">hamburger</label> --}}
     <input type="text" id="burg" name="name">
     <button type="submit">Add Burger</button>
   </div>
@@ -25,7 +24,7 @@
 </div>
 
 <div class="eaten">
-  <h2>DEVOURED</h2>
+  <h2 id="devouredTitle">DEVOURED</h2>
   {{#each burgers}}
     {{#if devoured}}
       {{> burgers/burger-block eaten=false}}
